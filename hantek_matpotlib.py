@@ -29,17 +29,17 @@ ChVDIV = [1, 1, 0.005, 0.002]
 
 #%% Apply settings
 
-h0.set_buf_len(16384 // 1)
+h0.set_buf_len(16384 // 1) # buffer len 16k, 8k, 4k
 
-h0.set_samplerate(SR)
+h0.set_samplerate(SR) # samples / sec
 
-h0.set_chvdiv(ChVDIV)
+h0.set_chvdiv(ChVDIV) # list volts
 
-h0.set_v_trig_source(0)
+h0.set_v_trig_source(0) # 0 - ch1, 1 - ch2, ...
 
-h0.set_v_trig_level(0.)
+h0.set_v_trig_level(0.) # volts
 
-h0.set_trig_sweep_mode('NORMAL')
+h0.set_trig_sweep_mode('NORMAL') # 'AUTO', 'SINGLE'
 
 h0.Configure()
 
