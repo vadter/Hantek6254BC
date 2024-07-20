@@ -1,5 +1,7 @@
 To get it work you need to install python 3, the pyusb, matplotlib and pyqtgraph libraries for scripts with the appropriate names (I use it under conda environment conda-forge).
 
+Ubuntu: copy 60-hantek-6254BC.rules to /lib/udev/rules.d/ and reboot
+
 Implemented functions based on the Qt example program for windows of the official software:
 
 1. A variant of the 4-channel operation mode has been implemented (mode 1 and 2 channels are not implemented).
